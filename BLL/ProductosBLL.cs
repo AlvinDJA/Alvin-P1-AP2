@@ -43,6 +43,7 @@ namespace Alvin_P1_AP2.BLL
             Contexto contexto = new Contexto();
             try
             {
+                producto.ValorInventario = producto.Costo * producto.Existencia;
                 contexto.Productos.Add(producto);
                 paso = contexto.SaveChanges() > 0;
             }
@@ -63,6 +64,7 @@ namespace Alvin_P1_AP2.BLL
             Contexto contexto = new Contexto();
             try
             {
+                producto.ValorInventario = producto.Costo * producto.Existencia;
                 contexto.Entry(producto).State = EntityState.Modified;
                 paso = contexto.SaveChanges() > 0;
             }
