@@ -16,10 +16,10 @@ namespace Alvin_P1_AP2.Models
 
         public float Existencia { get; set; } = 0;
 
-        [Range(minimum: 0, maximum: 50000000, ErrorMessage = "Inserte valor válido")]
+        [Range(minimum: 0.0, maximum: 50000000.0, ErrorMessage = "Inserte valor válido")]
         public float Costo { get; set; } = 0;
 
-        [Range(minimum: 0, maximum: 50000000, ErrorMessage = "Inserte valor válido")]
+        [Range(minimum: 0.0, maximum: 50000000.0, ErrorMessage = "Inserte valor válido")]
         public float ValorInventario { get; set; } = 0;
     }
 }
